@@ -1,0 +1,63 @@
+ 
+<html>
+  <head>
+    <title>hand to text</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3>Hand To Text 👌👎☝👉</h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your hands selfie to generate Meaning To Your Life.
+      	<br>
+        <b style="color: yellow">Are you saying Bang Bang?👉</b>
+        <br>
+        <b style="color: black">Are you saying Ok?👌</b>
+        <br>
+        <b style="color: rgb(255, 0, 0)">Are you saying You?☝</b>
+        <br>
+        <b style="color:grey">Are you saying Dislike?👎</b>
+        <br>
+        
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Webcam - </label>
+        <div id="camera"></div>
+        <br><br>
+        <button onclick="takesnapshot()">Capture (Click this or something will happen!)</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	    <label id="p1">Predction - </label>
+      <label id="prediction1"></label>
+      <br><br>
+      <label id="p2">Predction - </label>
+      <label id="prediction2"></label>
+      </div>
+      
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="camera2"></div>
+        <br><br>
+      <button onclick="predict()">Predict (Click this or something will happen!)</button>
+
+    </center>
+  </div>
+<script src="main.js"></script>
+  </body>
+</html>
+
+ 
